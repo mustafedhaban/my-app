@@ -3,16 +3,12 @@ import React, { useState } from "react";
 export default function Index() {
   const [counter, setCounter] = useState(0);
 
-  const handleIncrement = () => {
+  const increment = () => {
     setCounter(counter + 1);
   };
 
-  const handleDecrement = () => {
+  const decrement = () => {
     setCounter(counter - 1);
-  };
-
-  const handleReset = () => {
-    setCounter(0);
   };
 
   return (
@@ -25,24 +21,18 @@ export default function Index() {
         <button
           id="counterButtonIncrease"
           className="bg-blue-500 text-white px-4 py-2 rounded-md"
-          onClick={handleIncrement}
+          onClick={increment}
         >
           Increment
         </button>
         <button
           id="counterButtonDecrease"
           className="bg-red-500 text-white px-4 py-2 rounded-md"
-          onClick={handleDecrement}
+          onClick={decrement}
         >
           Decrement
         </button>
-        <button
-          id="counterButtonReset"
-          className="bg-gray-500 text-white px-4 py-2 rounded-md"
-          onClick={handleReset}
-          >
-            Reset
-          </button>
+        
         </div>
       </div>
     </div>
