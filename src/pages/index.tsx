@@ -1,21 +1,21 @@
 import React, { useState } from "react";
 
 export default function Index() {
-  const [counter, setCounter] = useState(0);
+  const [count, setCount] = useState(0);
 
   const increment = () => {
-    setCounter(counter + 1);
+    setCount(count + 1);
   };
 
   const decrement = () => {
-    setCounter(counter - 1);
+    setCount(count - 1);
   };
 
   return (
     <div className="flex items-center justify-center h-screen bg-gray-100">
       <div className="bg-white p-10 rounded-md shadow text-center">
         <h1 id="counterValue" className="text-4xl mb-4 text-gray-800">
-          {counter}
+            {count}
         </h1>
         <div className="flex justify-center gap-4">
         <button
